@@ -115,11 +115,11 @@ return selectedMenu
         if (IDToChange >= 1 && IDToChange <= menu.length) {
             const menuItem = menu[IDToChange - 1];
         
-            if (menuItem.hasOwnProperty(propToDelete)) {
+            if (menuItem.hasOwnProperty(propToChange)) {
                 menu[IDToChange - 1][propToChange] = newValue
-                console.log(`Властивість ${propToDelete} змінено в елемента з ID ${IDToChange} на ${newValue}`);
+                console.log(`Властивість ${propToChange} змінено в елемента з ID ${IDToChange} на ${newValue}`);
             } else {
-                console.log(`Властивість ${propToDelete} не існує у елемента з ID ${IDToChange}.`);
+                console.log(`Властивість ${propToChange} не існує у елемента з ID ${IDToChange}.`);
             }
         } else {
             console.log('Введений ID не є дійсним номером меню.');
